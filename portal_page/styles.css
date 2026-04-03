@@ -1,0 +1,156 @@
+#sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+#title {
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    font-family: var(--heading-font);
+    padding: 20px 0;
+    margin: 20px 20px 20px 180px;
+    text-align: center;
+    border: #818181 3px double;
+    position:relative;
+    overflow: hidden;
+}   
+#title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    #8ecae6 35%,
+    transparent 70%
+  );
+
+  transform: translateX(-120%);
+}
+
+#title:hover::after {
+  animation: wave 900ms ease-out;
+}
+#title:hover{
+    animation: titlegrow 900ms ease-out;
+}
+
+@keyframes titlegrow {
+  0%   { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wave {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+#title a {
+    color: var(--accent3-color);
+    text-decoration: none;
+}
+.container {
+    background-color: #b4b4b4;
+    font-family: var(--paragraph-font);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+main {
+    margin-left: 180px;
+    padding: 20px;
+}
+.content-box {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    color : white;
+    text-decoration: none;
+    border: 5px solid #818181;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-align: center;
+    margin: 5px;
+    color : white;
+    text-decoration: none;
+    border: 5px solid #818181;
+    
+}
+td a {
+    color: #818181;
+    text-decoration: none;
+}
+td a:hover {
+    color: #f1f1f1;
+}
+li {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin: 5px;
+    color : white;
+    text-decoration: none;
+    width: 100px;
+}
+li a {
+    color: #818181;
+    text-decoration: none;
+}
+li a:hover {
+    color: #f1f1f1;
+}
+#logo {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+#profile_pic {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    border: #818181 3px double;
+}
+#content {
+    flex: 1;
+}
+#about_me {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+#challenge_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#challenge_list ul {
+    list-style-type: none;
+    padding: 0;
+}

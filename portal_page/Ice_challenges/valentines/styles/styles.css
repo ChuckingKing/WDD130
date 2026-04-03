@@ -1,0 +1,90 @@
+/* Add your CSS here to style your valentines day page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #ff69b4;
+    --secondary-color: #ef476f; 
+    --background-color: #fff7f8; 
+    --text-color: #333;
+    --heading-color: #b4164a; 
+    --body-color: #ff99cc;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+#wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+li {
+    background: transparent;
+    border-radius: 999px;
+    color: var(--primary-color);
+
+}
+li:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+main h1{
+    font-family: 'Merriweather', serif;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+main img {
+    object-fit: cover;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    object-position: middle center;
+}
+main{
+    display: grid;
+}
+section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    
+}
+section:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+section h2{
+    text-align:center;
+    margin-top:30px;
+    color: var(--heading-color);
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 10px;
+}
+
