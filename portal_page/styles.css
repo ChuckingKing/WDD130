@@ -154,3 +154,41 @@ li a:hover {
     list-style-type: none;
     padding: 0;
 }
+
+.report-page {
+    margin-left: 180px;
+    padding: 20px;
+}
+
+.report-page main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 24px;
+    background-color: #b4b4b4;
+    border: 4px solid #818181;
+    border-radius: 6px;
+}
+
+.report-page h1,
+.report-page h2 {
+    text-align: center;
+}
+
+.report-page p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.report-page a {
+    color: #111;
+    font-weight: bold;
+}
+
+.report-page a:hover {
+    color: #f1f1f1;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}
